@@ -16,21 +16,21 @@
         }
         .container {
             background-color: #ffffff;
-            padding: 30px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            width: 350px;
+            width: 90%;
+            max-width: 350px;
         }
         h2 {
             color: #333333;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         img {
             border-radius: 10px;
             width: 100%;
-            height: auto;
-            margin-bottom: 20px;
+            height: auto;        
         }
         form {
             margin: 10px 0;
@@ -48,6 +48,22 @@
         input[type="submit"]:hover {
             background-color: #004494;
         }
+
+        /* Media Queries */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+                width: 95%;
+                max-width: 100%;
+            }
+            h2 {
+                margin-bottom: 10px;
+            }
+            input[type="submit"] {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -56,6 +72,9 @@
         <h2>Welcome to Robo Advisor</h2>
         <form action="/financial_QA" method="post">
             <input type="submit" value="Financial Q&A">
+        </form>
+        <form action="/financial_news" method="post">
+            <input type="submit" value="Financial News">
         </form>
         <form action="/prediction" method="post">
             <input type="submit" value="Prediction">
