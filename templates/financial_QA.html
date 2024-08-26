@@ -1,10 +1,75 @@
-<h2>Welcome to Q&A</h2>
-<form action="/makersuite" method="post">
-    <input type="text" name="q">
-    <input type="submit" value="Enter">
-</form>
-<form action="/" method="post">
-    <input type="submit" value="Main">
-</form>
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        h2 {
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        img {
+            border-radius: 10px;
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        form {
+            margin: 10px 0;
+        }
+        input[type="submit"] {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Q&A</h2>
+        <img src="https://png.pngtree.com/png-clipart/20220110/original/pngtree-flat-robot-question-mark-png-picture-material-png-image_7071104.png" alt="Robot with Question Mark">
+        <form action="/makersuite" method="post">
+            <input type="text" name="q" placeholder="Type your question...">
+            <input type="submit" value="Enter">
+        </form>
+        <form action="/" method="post">
+            <input type="submit" value="Main">
+        </form>
+    </div>
+</body>
+</html>
