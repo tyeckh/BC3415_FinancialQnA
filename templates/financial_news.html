@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+        }
+        h2 {
+            color: #333333;
+            margin-bottom: 15px;
+        }
+        .news-content {
+            font-size: 16px;
+            color: #555555;
+            margin-bottom: 20px;
+        }
+        .headline {
+            font-weight: bold;
+            font-size: 18px;
+            color: #222222;
+            margin-bottom: 10px;
+        }
+        .punchline {
+            font-weight: bold;
+        }
+        img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        input[type="submit"] {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: #004494;
+        }
+
+        /* Media Queries */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+                width: 95%;
+                max-width: 100%;
+            }
+            h2 {
+                margin-bottom: 10px;
+            }
+            .news-content {
+                font-size: 14px;
+            }
+            .headline {
+                font-size: 16px;
+            }
+            input[type="submit"] {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Financial News</h2>
+        <div class="news-content">
+            <p class="headline">Accountants Face Growing Discontent Over Increasing Workload</p>
+            <img src="https://media.istockphoto.com/id/1172141015/photo/african-american-businessman-tired-of-long-time-work-on-laptop.jpg?s=612x612&w=0&k=20&c=rKSbjDZ9PRGhCoQfNxiUMYx_JCzE9EALT1tmSO3bLCI=" alt="Stressed Guy">
+            <p>Accountants are expressing significant dissatisfaction with their roles, attributing their unhappiness to the mounting pressures they face. As the demands of financial reporting intensify, many are questioning the sustainability of their work-life balance.</p>
+            <p class="punchline">Why the frustration? It turns out, it's simply because it's accrual world!</p>
+        </div>
+        <form action="/" method="post">
+            <input type="submit" value="Back to Main Menu">
+        </form>
+    </div>
+</body>
+</html>
