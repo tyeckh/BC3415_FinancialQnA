@@ -23,7 +23,7 @@ def makersuite():
     return(render_template("makersuite.html",r=r.last))
 
 @app.route("/predcition",methods=["GET","POST"])
-def predcition():
+def prediction():
     return(render_template("predcition.html"))
 
 if __name__ == "__main__":
