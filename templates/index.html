@@ -1,11 +1,65 @@
-<img src="https://media.istockphoto.com/id/1634086519/photo/human-and-robot-hands-forming-a-heart-shape-together-ai-and-human-collaboration-concept.jpg?s=1024x1024&w=is&k=20&c=y-Hh5I7_kkPvympGEHh_aG9tc9_78YN3X-3dAoHxhVw="
-width="320" height="240">
-<h2>Welcome to Robo Advisor</h2>
-<form action="/financial_QA" method="post">
-    <input type="submit" value="Financial Q&A">
-</form>
-<form action="/prediction" method="post">
-    <input type="submit" value="Prediction">
-</form>
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robo Advisor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+        h2 {
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        form {
+            margin: 10px 0;
+        }
+        input[type="submit"] {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://thumbs.dreamstime.com/b/internet-robo-advisor-fintech-chat-bot-line-icon-cryptocurrency-internet-robo-advisor-fintech-chat-bot-blockchain-online-304747655.jpg" alt="Robo Advisor">
+        <h2>Welcome to Robo Advisor</h2>
+        <form action="/financial_QA" method="post">
+            <input type="submit" value="Financial Q&A">
+        </form>
+        <form action="/prediction" method="post">
+            <input type="submit" value="Prediction">
+        </form>
+    </div>
+</body>
+</html>
