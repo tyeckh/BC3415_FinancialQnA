@@ -2,7 +2,7 @@ from flask import Flask,render_template,request
 import google.generativeai as palm
 import os
 
-api = "AIzaSyAyK5yYWzpHhT7CRF7uxVkDh9NSjsVUrCU"
+api = os.getenv("MAKERSUITE_API_TOKEN") 
 palm.configure(api_key=api)
 model = {"model": "models/chat-bison-001"}
 
@@ -27,7 +27,7 @@ def makersuite():
     return(render_template("makersuite.html",r=r.last))
 
 @app.route("/prediction",methods=["GET","POST"])
-def predcition():
+def prediction():
     return(render_template("prediction.html"))
 
 if __name__ == "__main__":
