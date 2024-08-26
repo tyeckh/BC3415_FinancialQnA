@@ -20,7 +20,8 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            width: 300px;
+            width: 90%;
+            max-width: 400px;
         }
         h2 {
             color: #333333;
@@ -28,17 +29,16 @@
         }
         img {
             border-radius: 10px;
-            width: 100px;
+            width: 100%; 
             height: auto;
-            margin-bottom: 20px;
         }
         input[type="text"] {
-            width: 80%;
-            padding: 8px;
-            margin: 10px 0;
+            width: 90%;
+            padding: 10px; 
+            margin: 10px 0 30px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
-            font-size: 14px;
+            font-size: 16px; 
         }
         form {
             margin: 10px 0;
@@ -47,28 +47,43 @@
             background-color: #0056b3;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 12px 20px; 
             border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 18px; 
             width: 100%;
-            margin-bottom: 10px;
         }
         input[type="submit"]:hover {
             background-color: #004494;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                width: 90%;
+                max-width: 100%;
+            }
+            h2 {
+                margin-bottom: 15px;
+            }
+            
+            input[type="text"] {
+                width: 100%;
+            }
+           
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Welcome to Q&A</h2>
-        <img src="https://png.pngtree.com/png-clipart/20220110/original/pngtree-flat-robot-question-mark-png-picture-material-png-image_7071104.png" alt="Robot with Question Mark">
+        <h2>Welcome to Q&A Page</h2>
+        <img src="https://media.istockphoto.com/id/1214054918/vector/budget-management-app-personal-financial-control-cash-flow-tiny-woman-manages-the-personal.jpg?s=612x612&w=0&k=20&c=kPffn0lXROiTyEdrzXRNSb5bsnatjJgldNC4NAcAeWo=" alt="Financial qns">
         <form action="/makersuite" method="post">
             <input type="text" name="q" placeholder="Type your question...">
             <input type="submit" value="Enter">
         </form>
         <form action="/" method="post">
-            <input type="submit" value="Main">
+            <input type="submit" value="Back to Main Menu">
         </form>
     </div>
 </body>
