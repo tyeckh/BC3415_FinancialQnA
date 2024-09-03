@@ -4,7 +4,7 @@ import os
 
 api = os.getenv("MAKERSUITE_API_TOKEN") 
 palm.configure(api_key=api)
-model = {"model": "models/chat-bison-001"}
+model = { 'model': "models/text-bison-001"}
 
 app = Flask(__name__)
 
@@ -23,8 +23,8 @@ def financial_news():
 @app.route("/makersuite",methods=["GET","POST"])
 def makersuite():
     q = request.form.get("q")
-    r = palm.chat(prompt=q, **model)
-    return(render_template("makersuite.html",r=r.last))
+    r = palm.generate_text(prompt=q, **model)
+    return(render_template("makersuite.html",r=r.result))
 
 @app.route("/prediction",methods=["GET","POST"])
 def prediction():
