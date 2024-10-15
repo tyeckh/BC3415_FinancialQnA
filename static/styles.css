@@ -1,0 +1,109 @@
+/* General Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #444444;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: #0056b3;
+}
+
+button.btn {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px; /* Add margin between buttons */
+}
+
+button.btn:hover {
+    background-color: #004494;
+}
+
+button.btn:focus {
+    outline: none;
+    border-color: #004494;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;   /* Ensures image doesn't exceed container width */
+    height: auto;      /* Maintains aspect ratio */
+    border-radius: 10px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #004494;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 95%;
+        max-width: 100%;
+    }
+    
+    h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    input[type="submit"], button.btn {
+        font-size: 14px;
+    }
+}

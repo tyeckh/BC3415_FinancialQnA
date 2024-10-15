@@ -4,67 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robo Advisor</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            width: 90%;
-            max-width: 350px;
-        }
-        h2 {
-            color: #333333;
-            margin-bottom: 15px;
-        }
-        img {
-            border-radius: 10px;
-            width: 100%;
-            height: auto;        
-        }
-        form {
-            margin: 10px 0;
-        }
-        input[type="submit"] {
-            background-color: #0056b3;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            width: 100%;
-        }
-        input[type="submit"]:hover {
-            background-color: #004494;
-        }
-
-        /* Media Queries */
-        @media (max-width: 600px) {
-            .container {
-                padding: 15px;
-                width: 95%;
-                max-width: 100%;
-            }
-            h2 {
-                margin-bottom: 10px;
-            }
-            input[type="submit"] {
-                font-size: 14px;
-                padding: 8px 16px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <div class="container">
@@ -76,8 +16,11 @@
         <form action="/financial_news" method="post">
             <input type="submit" value="Financial News">
         </form>
-        <form action="/prediction" method="post">
-            <input type="submit" value="Prediction">
+        <form action="/sentiment_analysis" method="post">
+            <input type="submit" value="Sentiment Analysis">
+        </form>
+        <form action="/transfer_money" method="post">
+            <input type="submit" value="Transfer Money">
         </form>
     </div>
 </body>
