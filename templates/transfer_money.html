@@ -1,6 +1,6 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 
 <body>
@@ -90,8 +90,6 @@
         const payee=document.getElementById("payee").value;
         const amount=document.getElementById("amount").value;
 
-
-
         await contract.methods.transfer(payer,payee,amount).send({from:accounts[0]})
     }
 
@@ -102,6 +100,7 @@
         document.getElementById("view_payee").innerText = "Payee address " + result[1];
         document.getElementById("view_amount").innerText = "Amount " + result[2];
     }
+
 </script>
 
 </div>
